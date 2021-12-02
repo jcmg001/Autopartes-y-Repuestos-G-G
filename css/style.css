@@ -415,7 +415,7 @@ transition: all 1s;
         background: linear-gradient(#2371a8 , white );
         height: 130px;
         width: 100%;
-    }
+}
     
 .h1__index{
     font-size: 20px;
@@ -712,5 +712,42 @@ transition: all 1s;
     font-size: 30px;
     background: linear-gradient( #c0d7e9,white  );
     width: 100%;
+}
+} /* @media only screen  pages bombas */
+
+@media only screen and (max-width:425px)
+{
+
+
+    .header{
+        background: linear-gradient(#2371a8 , white );
+        height: 130px;
+        width: 100%;
+}
+.section__pago{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+    justify-items: center;
+    align-items: center;
+}
+.img__pago{
+    width: 120px;
+    height: 100px;
+}
+.h1__pages{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.nav__pages{
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    /* grid-column-gap: 50px ; */
+    grid-template-rows: repeat(2, 80px);
+    grid-row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
 }
 }
