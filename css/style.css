@@ -54,6 +54,7 @@ grid-template-rows: repeat(2, 170px);
 grid-row-gap: 20px;
 align-items: center;
 justify-content: center;
+text-align: center;
 }
 
 .div__pages__hijos {
@@ -80,6 +81,8 @@ transition: all 1s;
     height: 70px;
     align-items: center;
     padding-bottom: 5px;
+    text-decoration: none;
+    text-align: center;
 }
 
 .h3__pages{
