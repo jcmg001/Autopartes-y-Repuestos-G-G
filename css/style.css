@@ -26,7 +26,7 @@
 .h1__pages{
     font-size: 65px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .img__icono{
@@ -98,7 +98,7 @@ transition: all 1s;
 .h2__viajero{
     text-align: center;
     font-style: oblique;
-    font-size: 75px;
+    font-size: 60px;
     margin-top: 5%;
     background: linear-gradient(#c0d7e9  , white );
 } 
@@ -245,7 +245,7 @@ transition: all 1s;
 .footer{
     background: linear-gradient(to top, #2371a8 , white );
     margin-top: 100px;
-    height:  163px;
+    height:  200px;
 }
 
 .ol__footer{
@@ -481,20 +481,9 @@ transition: all 1s;
     height: 100px;
 }
 
-.imagen__viajero{
-    width: 105px;
-    height: 80px;
-    }
-
-.div__viajero{
-    display: grid;
-    grid-template-columns: repeat(2, 100px);
-    grid-column-gap: 70px ;
-    grid-template-rows: repeat(1, 140px);
-    grid-row-gap: 30px;
-    align-items: center;
-    justify-content: center;
-    }
+.p__carrusel{
+    font-size: 30px;
+}
 
 .h3__pages{
     text-align: center;
@@ -586,7 +575,7 @@ transition: all 1s;
 .footer{
     background: linear-gradient(to top, #2371a8 , white );
     margin-top: 2rem;
-    height:  150px;
+    height:  200px;
 }
 
 .div__menu{
@@ -604,6 +593,10 @@ transition: all 1s;
     list-style-type: none;
     font-size: 14px;}
 }
+
+/* implementando bs */
+
+
 
 @media only screen and (min-width:768px) and (max-width:1024px)
 {
@@ -711,7 +704,7 @@ transition: all 1s;
 .footer{
     background: linear-gradient(to top, #2371a8 , white );
     margin-top: 50px;
-    height:  150px;
+    height:  200px;
     width: 100%;
 }
 
