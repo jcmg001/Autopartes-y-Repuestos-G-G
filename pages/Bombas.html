@@ -12,165 +12,220 @@
 </head>
 <body id="inicio" class="body__fondo">
     <!--menu del header-->
-<header class="header">
-    
-    <img class="img__icono" src="../imagenes/icono.jpg" alt="icono">  
-    
-    <div class="div__menu">
-        <nav class="nav__menu">
-            <a class="menu btn btn-primary" href="../index.html"> Inicio</a>
-            <a class="menu btn btn-primary" href="#lista">Lista</a>
-            <a class="menu btn btn-primary" href="#empresa">Empresa</a>
-            <a class="menu btn btn-primary" href="./servicios.html">Servicios</a>
+    <header class="header">
+            <img class="img__icono" src="../imagenes/icono.jpg" alt="icono">  
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#lista">Lista</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown
+                            </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./servicios.html">Servicios</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#empresa">Empresa</a>
+                        </li>
+                        </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-    </div>
-        
-</header>
+    </header>
     <H1 class="h1__pages animate__animated animate__rubberBand ">Autopartes y Repuestos G&G</H1>
             <!-- Menu des ervicios-->
-<section id="repuestos" class="section__pages">
-        <nav class="nav__pages">
-                <div>
-                    <img class="pages" src="../imagenes/carroceria.png" alt="carroceria">
-                    <a class="pages" href="./carroceria.html">Carroceria</a>
-                </div>
-                <div>
-                    <img class="pages" src="../imagenes/embragues.png" alt="embragues">
-                    <a class="pages" href="./embragues.html">Embragues</a>
-                </div>
-                <div>
-                    <img class="pages" src="../imagenes/electricidad_electronica.png" alt="electricidad_electronica">
-                    <a class="pages" href="./electricidad_electronica.html">Electricidad</a>
-                </div>
-                <div>
-                    <img class="pages" src="../imagenes/frenos.png" alt="frenos">
-                    <a class="pages" href="./frenos.html"> frenos</a>
-                </div>
-                <div>
-                    <img class="pages" src="../imagenes/tensores.png" alt="correas">
-                    <a class="pages" href="./correas_tensores.html">correas y tensores</a>
-                </div>
-                <div>
-                    <img class="pages" src="../imagenes/motor.png" alt="motor"> 
-                    <a class="pages" href="./motor.html">motor</a>
-                </div>
-                <div>
-                    <img class="pages" src="../imagenes/transmision.png" alt="transmision">
-                    <a class="pages" href="./transmision.html">transmisiòn</a>
-                </div>
-        </nav>
-</section>
-<section id="lista" class="section__repuesto"">
-    <div>
-        <h2 id="lista" class="h2__contacto">
-            Haga su consulta
-        </h2>
-    </div>
-    <form class="cuadro__consulta" action=""> 
+    <section id="repuestos" class="section__pages">
+            <nav class="nav__pages hove__pages">
+                    <div class="div__pages__hijos">
+                        <a class="pages" href="./carroceria.html">
+                        <img class="pages"  src="../imagenes/carroceria.png" alt="carroceria">Carroceria</a>
+                    </div>
+                    <div class="div__pages__hijos">
+                        <a class="pages" href="./embragues.html">
+                        <img class="pages" src="../imagenes/embragues.png" alt="embragues">Embragues</a>
+                    </div>
+                    <div class="div__pages__hijos">
+                        <a class="pages" href="./electricidad_electronica.html">
+                        <img class="pages" src="../imagenes/electricidad_electronica.png" alt="electricidad_electronica">Electricidad</a>
+                    </div>
+                    <div class="div__pages__hijos">
+                        <a class="pages" href="./frenos.html"> 
+                        <img class="pages" src="../imagenes/frenos.png" alt="frenos">Frenos</a>
+                    </div>
+                    <div class="div__pages__hijos">
+                        <a class="pages" href="./correas_tensores.html">
+                        <img class="pages" src="../imagenes/tensores.png" alt="correas">Correas</a>
+                    </div>
+                    <div class="div__pages__hijos">
+                        <a class="pages" href="./motor.html">
+                        <img class="pages" src="../imagenes/motor.png" alt="motor"> Motor</a>
+                    </div>
+                    <div class="div__pages__hijos">
+                        <a class="pages" href="./transmision.html">
+                        <img class="pages" src="../imagenes/transmision.png" alt="transmision">transmisiòn</a>
+                    </div>
+            </nav>
+    </section>
+    <section id="lista" class="section__repuesto"">
         <div>
-            <label class="consulta__contacto" for="producto"> Producto</label>
-                <input class="consulta__contacto" type="text" name="selecciona un producto" id="consulta" placeholder="Escribe el producto" required>
-            <label class="consulta__contcto" for="descripcion"> Descripcion</label>
-                <input type="text" name="descripcion" id="descripcion" placeholder="Escribe la descripcion" required>
-            <label class="consulta__contacto" for="Medida"> Medida </label>
-                <input type="text" name="Medida" id="Medida" placeholder=" Escribe la medida" required>
-            <label class="consulta__Contacto" for="Marca"> Marca</label>
-                <input type="text" name="Marca" id="marca" placeholder="Escribe la marca" required>
-        <div>
-        <div>
-            <input class="boton__buscar" type="button" value="Ver">
-        </div>  
-    </form>
-        <div class="h3">
-            <h3 class="h3"> Bombas y Repuestos </h3>
+            <h2 id="lista" class="h2__contacto">
+                Haga su consulta
+            </h2>
         </div>
-        <table class="table">
-            <thead>
-              
-            </thead>
-            <tbody>
-              <tr class="table-active">
-                
-              </tr>
-              <tr>
-                
-              </tr>
-              <tr>
-                <th scope="row">Numero de pieza</th>
-                <td colspan="2" class="table-active">nombre de pieza</td>
-                <td>Marca de pieza</td>
-              </tr>
-            </tbody>
-          </table>
-        <div class="div__marca">
-            <img class="marca" src="../imagenes/skf_repuesto.png" alt=" skf repuestos">
-            <img class="marca" src="../imagenes/marca_bosh.jpg" alt="marca_bosh">
-        </div>  
-</section>
+        <form class="cuadro__consulta" action=""> 
+            <div>
+                <label class="consulta__contacto" for="producto"> Producto</label>
+                    <input class="consulta__contacto" type="text" name="selecciona un producto" id="consulta" placeholder="Escribe el producto" required>
+                <label class="consulta__contcto" for="descripcion"> Descripcion</label>
+                    <input type="text" name="descripcion" id="descripcion" placeholder="Escribe la descripcion" required>
+                <label class="consulta__contacto" for="Medida"> Medida </label>
+                    <input type="text" name="Medida" id="Medida" placeholder=" Escribe la medida" required>
+                <label class="consulta__Contacto" for="Marca"> Marca</label>
+                    <input type="text" name="Marca" id="marca" placeholder="Escribe la marca" required>
+            <div>
+            <div>
+                <input class="boton__buscar" type="button" value="Ver">
+            </div>  
+        </form>
+            <div class="h3">
+                <h3 class="h3"> Bombas y Repuestos </h3>
+            </div>
+            <table class="table">
+                <thead>
+                </thead>
+                <tbody>
+                <tr class="table-active">
+                </tr>
+                <tr>
+                    
+                </tr>
+                <tr>
+                    <th scope="row">Numero de pieza</th>
+                    <td colspan="2" class="table-active">nombre de pieza</td>
+                    <td>Marca de pieza</td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="div__marca">
+                <img class="marca" src="../imagenes/skf_repuesto.png" alt=" skf repuestos">
+                <img class="marca" src="../imagenes/marca_bosh.jpg" alt="marca_bosh">
+            </div>  
+    </section>
 <!--
     <section><section>  aca va un section donde estaran todos los repuestos pero aun no tengo la info
 -->
-<section>
+    <section>
         <h2 class="h2__contacto"> ¿Sabias que ?</h2>
-    <p class="p__nosotros">
-        Como cualquier otro dispositivo del coche la bomba de gasolina, tiene un vencimiento que está en relación directa con los cuidados y buen trato que esta recibe, a continuación te ofrecemos algunas recomendaciones para prolongar su vida útil:
+        <div class="clearfix">
+            <iframe  class="col-md-6 float-md-end mb-3 ms-md-3" height="300" src="https://www.youtube.com/embed/aRlQ1O9RE4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Como cualquier otro dispositivo del coche la bomba de gasolina, tiene un vencimiento que está en relación directa con los cuidados y buen trato que esta recibe, a continuación te ofrecemos algunas recomendaciones para prolongar su vida útil:
 
-        <strong>Cambiar oportunamente el filtro de la gasolina</strong>, esto evita la entrada de partículas de sucio que tapan y obstruyen la bomba
-        Verificar que el tanque siempre tenga gasolina
-        Al cambiar la bomba <strong> siempre limpiar el tanque y sus ductos</strong> y
-        <strong>Verificar que la bomba funciona perfectamente antes de instalarla</strong>
-        Una verificación sencilla de que la bomba está funcionando es girar la llave de encendido, pero si prender el motor. Se debe escuchar el zumbido de la bomba en pleno funcionamiento, por un lapso de 1 a 2 segundos,
-        este tiempo es el suficiente para activar en su totalidad el sistema de inyección de combustible.
-    </p>
-    <iframe class="video__sabiasque" height="300" src="https://www.youtube.com/embed/aRlQ1O9RE4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</section>
-
+                <strong>Cambiar oportunamente el filtro de la gasolina</strong>, esto evita la entrada de partículas de sucio que tapan y obstruyen la bomba
+                Verificar que el tanque siempre tenga gasolina
+                Al cambiar la bomba <strong> siempre limpiar el tanque y sus ductos</strong> y
+                <strong>Verificar que la bomba funciona perfectamente antes de instalarla</strong>
+                Una verificación sencilla de que la bomba está funcionando es girar la llave de encendido, pero si prender el motor. Se debe escuchar el zumbido de la bomba en pleno funcionamiento, por un lapso de 1 a 2 segundos,
+                este tiempo es el suficiente para activar en su totalidad el sistema de inyección de combustible.
+                </p>
+        </div>
+    </section>
 <!-- seccion bio de la empresa-->
 
-<section class="section__nosotros__pages"> 
-    <h2 id="empresa" class="h2__nosotros__pages"  >Sobre  nosotros</h2>
-    <p class="p__nosotros__pages">
-        Somos una empresa comercializadora de repuestos para vehículos comerciales Ford, Volkswagen, Fiat, Chevrolet, Renault, Jeep, Toyota (pick-ups, camiones, utilitarios y buses). Nos caracterizamos por disponer de inventarios completos de piezas para vehículos de nuestra especialidad, abarcando modelos desde 1990 hasta los de más reciente aparición en nuestro mercado.
-        Mantenemos 22.000 referencias en stock permanente.
-        Contamos con amplias instalaciones, y personal de ventas altamente capacitado.
-    </p>
+    <section class="section__nosotros__pages"> 
+        <h2 id="empresa" class="h2__nosotros__pages"  >Sobre  nosotros</h2>
+        <div class="card">
+            <div class="card-body">
+                    <p class="p__nosotros__pages">
+                    Somos una empresa comercializadora de repuestos para vehículos comerciales Ford, Volkswagen, Fiat, Chevrolet, Renault, Jeep, Toyota (pick-ups, camiones, utilitarios y buses). Nos caracterizamos por disponer de inventarios completos de piezas para vehículos de nuestra especialidad, abarcando modelos desde 1990 hasta los de más reciente aparición en nuestro mercado.
+                    Mantenemos 22.000 referencias en stock permanente.
+                    Contamos con amplias instalaciones, y personal de ventas altamente capacitado.
+                    </p>
 
-    <div class="p__nosotros__pages">
-        <strong> ESTO NOS PERMITE DESPACHAR CUALQUIER PEDIDO ESTRICTAMENTE EN EL DÍA, CON 100% DE EFECTIVIDAD </strong> 
-    </div>
+                <div class="p__nosotros__pages">
+                    <strong> ESTO NOS PERMITE DESPACHAR CUALQUIER PEDIDO ESTRICTAMENTE EN EL DÍA, CON 100% DE EFECTIVIDAD </strong> 
+                </div>
 
-    <p class="p__nosotros__pages">
-        Nos avalan más de 10 años de permanencia en el mercado, habiendo podido combinar nuestra tradición y cultura empresarial, con tecnología e innovación.
-        Quedamos desde ya a su disposición. Será una satisfacción para nosotros responder a su contacto
-    </p>
-</section>
-<section class=" section__pago">
-    <img class="img__pago"  src="../imagenes/metodo_de_pago.png" alt="metodo_de_pago">
-    <img class="img__pago" src="../imagenes/envio_pais.png" alt="envio_pais">
-</section>
-<footer class="footer">
-    <div class="nav__menu">
-        <a class="menu" href="#inicio">inico</a>
-        <a class="menu" href="#lista">Lista</a>
-        <a class="menu" href="#empresa">Empresa</a>
-        <a class="menu" href="#repuestos">Repuestos</a>
+                <p class="p__nosotros__pages">
+                Nos avalan más de 10 años de permanencia en el mercado, habiendo podido combinar nuestra tradición y cultura empresarial, con tecnología e innovación.
+                Quedamos desde ya a su disposición. Será una satisfacción para nosotros responder a su contacto
+                </p>
+            </div>
         </div>
-        <a href="https://www.facebook.com/">
-            <img  class="img__footer" src="../imagenes/Facebook.png" alt="facebook" width="50px">
-        </a>
-        <a href="https://www.instagram.com/">
-            <img class="img__footer" src="../imagenes/1025px-Instagram-Icon.png" alt="instagram" width="50px">
-        </a>
-        <a href="https://twitter.com/">
-            <img class="img__footer" src="../imagenes/twitter.png" alt="twitter" width="50px">
-        </a>
-        <ol class="ol__footer">
-            <li>celular : +58 414 2563256</li>
-            <li>telefono fijo :0212 112390991 </li>
-            <li>email: autopartesyrepuestosg&g@hotmail.com</li>
-        </ol>
-</footer>
-<script src="./assets/js/wow.min.js"></script>
-        <script> new WOW().init(); </script>
+    </section>
+    <section class=" section__pago">
+        <img src="../imagenes/metodo_de_pago.png" class="rounded float-start img__pagos1" alt="pago" >
+        <img src="../imagenes/envio_pais.png" class="rounded float-end img__pagos2" alt="envio pais" >
+    </section>
+    <footer class="footer">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                    <a class="navbar-brand" href="#inicio">Arriba</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#lista">Lista</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#empresa">Empresa</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+            <a href="https://www.facebook.com/">
+                <img  class="img__footer" src="../imagenes/Facebook.png" alt="facebook" width="50px">
+            </a>
+            <a href="https://www.instagram.com/">
+                <img class="img__footer" src="../imagenes/1025px-Instagram-Icon.png" alt="instagram" width="50px">
+            </a>
+            <a href="https://twitter.com/">
+                <img class="img__footer" src="../imagenes/twitter.png" alt="twitter" width="50px">
+            </a>
+            <ol class="ol__footer">
+                <li>celular : +58 414 2563256</li>
+                <li>telefono fijo :0212 112390991 </li>
+                <li>email: autopartesyrepuestosg&g@hotmail.com</li>
+            </ol>
+    </footer>
+    <script src="./assets/js/wow.min.js"></script>
+    <script> new WOW().init(); </script>
 </body>
 </html>
