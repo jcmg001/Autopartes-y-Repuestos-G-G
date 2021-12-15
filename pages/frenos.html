@@ -13,49 +13,75 @@
 <body id="inicio" class="body__fondo">
     <!--menu del header-->
 <header class="header">
-    
     <img class="img__icono" src="../imagenes/icono.jpg" alt="icono">  
-    
-    <div class="div__menu">
-        <nav class="nav__menu">
-            <a class="menu btn btn-primary" href="../index.html"> Inicio</a>
-            <a class="menu btn btn-primary" href="#lista">Lista</a>
-            <a class="menu btn btn-primary" href="#empresa">Empresa</a>
-            <a class="menu btn btn-primary" href="./servicios.html">Servicios</a>
-        </nav>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#lista">Lista</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#empresa">Empresa</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./servicios.html">Servicios</a>
+            </li>
+            </ul>
+            <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
 </header>    
             <H1 class="h1__pages animate__animated animate__rubberBand ">Autopartes y Repuestos G&G</H1>
                 <!-- Menu des ervicios-->
     <section id="repuestos" class="section__pages">
-            <nav class="nav__pages">
+            <nav class="nav__pages hove__pages">
                 <div class="div__pages__hijos" >
-                    <img class="pages" src="../imagenes/carroceria.png" alt="carroceria">
-                    <a class="pages" href="./carroceria.html">Carroceria</a>
+                    <a class="pages" href="./carroceria.html">
+                    <img class="pages" src="../imagenes/carroceria.png" alt="carroceria">Carroceria</a>
                 </div>
                 <div class="div__pages__hijos" >
-                    <img class="pages" src="../imagenes/embragues.png" alt="embragues">
-                    <a class="pages" href="./embragues.html">Embragues</a>
+                     <a class="pages" href="./embragues.html">
+                    <img class="pages" src="../imagenes/embragues.png" alt="embragues">Embragues</a>
                 </div>
                 <div class="div__pages__hijos" >
-                    <img class="pages" src="../imagenes/electricidad_electronica.png" alt="electricidad_electronica">
-                    <a class="pages" href="./electricidad_electronica.html">Electricidad y Electronica</a>
+                     <a class="pages" href="./electricidad_electronica.html">
+                    <img class="pages" src="../imagenes/electricidad_electronica.png" alt="electricidad_electronica">Electricidad</a>
                 </div>
                 <div class="div__pages__hijos" >
-                    <img class="pages" src="../imagenes/bombas.png" alt="bombas">
-                    <a class="pages" href="./Bombas.html">Bombas</a>
+                    <a class="pages" href="./Bombas.html">
+                    <img class="pages" src="../imagenes/bombas.png" alt="bombas">Bombas</a>
                 </div>
                 <div class="div__pages__hijos" >
-                    <img class="pages" src="../imagenes/tensores.png" alt="correas">
-                    <a class="pages" href="./correas_tensores.html">correas y tensores</a>
+                     <a class="pages" href="./correas_tensores.html">
+                    <img class="pages" src="../imagenes/tensores.png" alt="correas">Correas </a>
                 </div>
                 <div class="div__pages__hijos" >
-                    <img class="pages" src="../imagenes/motor.png" alt="motor">  
-                    <a class="pages" href="./motor.html">motor</a>
+                    <a class="pages" href="./motor.html">
+                    <img class="pages" src="../imagenes/motor.png" alt="motor">Motor</a>  
                 </div>
                 <div class="div__pages__hijos" >
-                    <img class="pages" src="../imagenes/transmision.png" alt="transmision">
-                    <a class="pages" href="./transmision.html">transmisiòn</a>
+                    <a class="pages" href="./transmision.html">
+                    <img class="pages" src="../imagenes/transmision.png" alt="transmision">Transmisiòn</a>
                 </div>
             </nav>
     </section>
@@ -164,12 +190,43 @@
     </section>
 <!--footer de la empresa-->
     <footer class="footer">
-        <div class="nav__menu">
-            <a class="menu btn btn-primary" href="#inicio">inico</a>
-            <a class="menu btn btn-primary" href="#lista">Lista</a>
-            <a class="menu btn btn-primary" href="#empresa">Empresa</a>
-            <a class="menu btn btn-primary" href="#repuestos">Repuestos</a>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">Arriba</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#lista">Lista</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#empresa">Empresa</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                </li>
+                </ul>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
+            </div>
+        </nav>
             <a href="https://www.facebook.com/">
                 <img  class="img__footer" src="../imagenes/Facebook.png" alt="facebook" width="50px">
             </a>
