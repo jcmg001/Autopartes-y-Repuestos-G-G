@@ -1,0 +1,266 @@
+@charset "UTF-8";
+.imagenFondo {
+  background-image: none;
+  width: 100%;
+}
+
+.h2__viajero {
+  text-align: center;
+  font-style: oblique;
+  font-size: 50px;
+  margin-top: 5%;
+  background: linear-gradient(#c0d7e9, white);
+}
+@media (max-width: 320px) {
+  .h2__viajero {
+    font-size: 20px;
+  }
+}
+
+.h2__atencion {
+  text-align: center;
+  font-style: oblique;
+  font-size: 50px;
+  margin-top: 15px;
+  background: linear-gradient(#c0d7e9, white);
+}
+@media (max-width: 320px) {
+  .h2__atencion {
+    font-size: 20px;
+  }
+}
+
+.div__atencion {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: repeat(2, 200px);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 320px) {
+  .div__atencion {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 135px);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 15px 30px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .div__atencion {
+    display: grid;
+    grid-template-columns: repeat(3, 212px);
+    grid-template-rows: repeat(2, 204px);
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+
+.h3__contacto {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+@media (max-width: 320px) {
+  .p__atencion {
+    text-align: center;
+    margin-top: 4px;
+    font-size: 15px;
+    line-height: 1;
+    padding: 3%;
+  }
+}
+
+.div__atencion__hjos {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.img__tamaño {
+  width: 125px;
+  height: 125px;
+}
+@media (max-width: 320px) {
+  .img__tamaño {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.section__nosotros {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin-bottom: 50px;
+  justify-items: center;
+  align-items: center;
+}
+@media (max-width: 320px) {
+  .section__nosotros {
+    justify-items: center;
+    align-items: center;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .img__nosotros {
+    width: 200px;
+    height: 250px;
+  }
+}
+
+.texto__nosotros {
+  text-align: justify;
+  line-height: 1.25;
+  padding-right: 10%;
+  font-size: 20px;
+}
+@media (max-width: 320px) {
+  .texto__nosotros {
+    line-height: 1.25;
+    font-size: 17px;
+    text-align: center;
+    padding: 5%;
+  }
+}
+@media (min-width: 768px) {
+  .texto__nosotros {
+    text-align: justify;
+    line-height: 1.25;
+    font-size: 15px;
+  }
+}
+
+.h2__nosotros {
+  text-align: center;
+  font-style: oblique;
+  font-size: 50px;
+  margin: 15px;
+  background: linear-gradient(#c0d7e9, white);
+}
+@media (max-width: 320px) {
+  .h2__nosotros {
+    font-size: 20px;
+  }
+}
+
+.h2__contacto {
+  text-align: center;
+  font-style: oblique;
+  font-size: 50px;
+  background: linear-gradient(#c0d7e9, white);
+}
+@media (max-width: 320px) {
+  .h2__contacto {
+    font-size: 20px;
+  }
+}
+
+.table__border {
+  border: solid 1px black;
+  width: 90%;
+  font-size: 15px;
+}
+@media (max-width: 320px) {
+  .table__border {
+    font-size: 10px;
+  }
+}
+
+.footer {
+  background: linear-gradient(to top, #2371a8, white);
+  margin-top: 100px;
+}
+
+.ol__footer {
+  text-align: center;
+  list-style-type: none;
+}
+
+.img__footer {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.img__icono {
+  height: 130px;
+}
+
+.body__fondo {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  background: linear-gradient(#2371a8, white);
+}
+
+.h1__index {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 50px;
+}
+@media (max-width: 425px) {
+  .h1__index {
+    font-size: 25px;
+  }
+}
+
+.nav__pages {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-column-gap: 50px;
+  grid-template-rows: repeat(2, 170px);
+  grid-row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media (max-width: 425px) {
+  .nav__pages {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 35px);
+  }
+}
+
+.div__pages__hijos {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  transition: all 1s;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.hove__pages :hover {
+  transform: scale(1.1);
+}
+
+.texto____menu {
+  text-decoration: none;
+  width: 70px;
+  text-align: center;
+}
+
+.pages {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  padding-bottom: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style2.css.map */
