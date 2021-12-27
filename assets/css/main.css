@@ -11,6 +11,7 @@
   margin-top: 5%;
   background: linear-gradient(#c0d7e9, white);
 }
+
 @media (max-width: 320px) {
   .h2__viajero {
     font-size: 20px;
@@ -24,6 +25,7 @@
   margin-top: 15px;
   background: linear-gradient(#c0d7e9, white);
 }
+
 @media (max-width: 320px) {
   .h2__atencion {
     font-size: 20px;
@@ -38,6 +40,7 @@
   justify-content: center;
   text-align: center;
 }
+
 @media (max-width: 320px) {
   .div__atencion {
     display: grid;
@@ -49,6 +52,7 @@
     text-align: center;
   }
 }
+
 @media (min-width: 768px) {
   .div__atencion {
     display: grid;
@@ -86,6 +90,7 @@
   width: 125px;
   height: 125px;
 }
+
 @media (max-width: 320px) {
   .img__tamaño {
     width: 60px;
@@ -100,6 +105,7 @@
   justify-items: center;
   align-items: center;
 }
+
 @media (max-width: 320px) {
   .section__nosotros {
     justify-items: center;
@@ -121,6 +127,7 @@
   padding-right: 10%;
   font-size: 20px;
 }
+
 @media (max-width: 320px) {
   .texto__nosotros {
     line-height: 1.25;
@@ -129,6 +136,7 @@
     padding: 5%;
   }
 }
+
 @media (min-width: 768px) {
   .texto__nosotros {
     text-align: justify;
@@ -144,6 +152,7 @@
   margin: 15px;
   background: linear-gradient(#c0d7e9, white);
 }
+
 @media (max-width: 320px) {
   .h2__nosotros {
     font-size: 20px;
@@ -156,6 +165,7 @@
   font-size: 50px;
   background: linear-gradient(#c0d7e9, white);
 }
+
 @media (max-width: 320px) {
   .h2__contacto {
     font-size: 20px;
@@ -167,6 +177,7 @@
   width: 90%;
   font-size: 15px;
 }
+
 @media (max-width: 320px) {
   .table__border {
     font-size: 10px;
@@ -187,6 +198,23 @@
   margin-top: 20px;
   width: 50px;
   height: 50px;
+}
+
+.boton__buscar {
+  padding: 5px 100px;
+  font-size: 21px;
+  color: #f4f4f5;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  background-color: #2371a8;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.h3 {
+  font-size: 40px;
+  margin-top: 3%;
+  text-align: center;
 }
 
 .img__icono {
@@ -210,6 +238,7 @@
   text-align: center;
   margin-top: 50px;
 }
+
 @media (max-width: 425px) {
   .h1__index {
     font-size: 25px;
@@ -227,6 +256,7 @@
   justify-content: center;
   text-align: center;
 }
+
 @media (max-width: 425px) {
   .nav__pages {
     margin-top: 3rem;
@@ -263,4 +293,7 @@
   text-align: center;
 }
 
-/*# sourceMappingURL=style2.css.map */
+.body {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */

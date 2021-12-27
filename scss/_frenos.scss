@@ -1,0 +1,64 @@
+// variables
+$mobile: 425px;
+$tablet:768px;
+
+.h1{
+    &__pages{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+}
+
+.section{
+    &__pagos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+    justify-items: center;
+    align-items: center;
+    }
+}
+
+
+@media (max-width: $mobile){
+    
+    .h1{
+        &__pages{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    }
+
+
+.section{
+    &__pagos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+    justify-items: center;
+    align-items: center;
+    }
+}
+
+.img{
+    &__pagos1{
+            height:70px ;
+            width: 100px;
+        }
+    }
+
+    .img{
+        &__pagos2{
+        height: 100px;
+        width: 100px;
+    }
+    }
+
+    .center{
+        &__iframe{
+            width: 100%;
+        }
+    }
+    }

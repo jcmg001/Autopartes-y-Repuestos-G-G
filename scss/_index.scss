@@ -1,40 +1,45 @@
 //variable
-$mobile: 320px;
+$mobile: 425px;
 $tablet: 768px;
 
-.imagenFondo{
-    background-image: none;
-    width: 100%;
-    
-}
+
+//map
+
+$tamaño: (
+    h1: 45px,
+    h2: 35px,
+    h3: 25px,
+    h4: 20px
+    );
+
+
+$h2: map-get($map: $tamaño, $key: h2 );
 
 .h2{
     &__viajero{
         text-align: center;
         font-style: oblique;
-        font-size: 50px;
+        font-size: $h2;
         margin-top: 5%;
         background: linear-gradient(#c0d7e9  , white );
-        @media( max-width: $mobile){
-            font-size: 20px;
         }
     }
+
+.imagenFondo{
+    background-image: none;
+    width: 100%;
 }
+
 
 .h2{
     &__atencion{
         text-align: center;
         font-style: oblique;
-        font-size: 50px;
+        font-size: $h2;
         margin-top: 15px;
         background: linear-gradient(#c0d7e9  , white );
-        @media( max-width: $mobile){
-            font-size: 20px;
-        }
     }
 }
-
-
 
 .div{
     &__atencion{
@@ -43,23 +48,8 @@ $tablet: 768px;
         grid-template-rows: repeat(2,200px);
         align-items: center;
         justify-content: center;
-        text-align: center; 
-        @media( max-width: $mobile){
-            display: grid;
-            grid-template-columns: repeat(2, 150px);
-            grid-template-rows: repeat(3,135px);
-            align-items: center;
-            justify-items: center;
-            grid-gap: 15px 30px;
-            text-align: center; }
-            @media( min-width: $tablet){
-                display: grid;
-                grid-template-columns: repeat(3, 212px);
-                grid-template-rows: repeat(2,204px);
-                align-items: center;
-                justify-content: center;
-                margin-top: 60px;}
-}
+        text-align: center;  
+    }
 }
 
 .h3{
@@ -69,24 +59,12 @@ $tablet: 768px;
     }
 }
 
-.p{
-    &__atencion{
-        @media( max-width: $mobile){
-            text-align:center;
-    margin-top: 4px;
-    font-size: 15px;
-    line-height: 1;
-    padding: 3%;
-        }
-    }
-}
-
 .div{
     &__atencion{
         &__hjos{
     display:grid;
    justify-items:center;
-  align-items: center;
+    align-items: center;
    text-align: center; 
     }
     }
@@ -96,10 +74,6 @@ $tablet: 768px;
     &__tamaño{
     width: 125px;
     height: 125px;
-    @media( max-width: $mobile){
-        width: 60px;
-    height: 60px;
-    }
     }
 }
 
@@ -110,54 +84,31 @@ $tablet: 768px;
     margin-bottom: 50px;
     justify-items: center;
     align-items: center; 
-    @media( max-width: $mobile){
-        justify-items: center;
-    align-items: center;
-    display: block;
-    }
     }
 }
 
-.img{
-    &__nosotros{
-        @media( min-width: $tablet){
-            width: 200px;
-            height: 250px;
-        }
+@mixin parrafo {
+    text-align: justify;
+    line-height: 1.25;
+    padding-right: 10%;
+    font-size: 30px;
+}
+
+.p{
+    &__atencion{
+        @include parrafo;
     }
 }
 
 .texto{
     &__nosotros{
-        text-align: justify;
-    line-height: 1.25;
-    padding-right: 10%;
-    font-size: 20px;
-    @media( max-width: $mobile){
-        line-height: 1.25;
-    font-size: 17px;
-    text-align: center;
-    padding: 5%;}
-    @media( min-width: $tablet){
-        text-align: justify;
-    line-height: 1.25;
-    font-size: 15px;
-    }
+        @include parrafo;
     }
 }
 
-
-
 .h2{
     &__nosotros{
-        text-align: center;
-        font-style: oblique;
-        font-size: 50px;
-        margin: 15px;
-        background: linear-gradient(#c0d7e9 , white );
-        @media( max-width: $mobile){
-            font-size: 20px;
-        }
+       @extend .h2__atencion;
     }
 }
 
@@ -165,11 +116,8 @@ $tablet: 768px;
     &__contacto{
         text-align: center;
     font-style: oblique;
-    font-size: 50px;
+    font-size: $h2;
     background: linear-gradient( #c0d7e9,white  );
-    @media( max-width: $mobile){
-        font-size: 20px;
-    }
     }
 }
 
@@ -178,12 +126,8 @@ $tablet: 768px;
         border: solid 1px black;
     width: 90%;
     font-size: 15px;
-    @media( max-width: $mobile){
-        font-size: 10px;
-    }
     } 
 }
-
 
 .footer{
     background: linear-gradient(to top, #2371a8 , white );
@@ -205,3 +149,128 @@ $tablet: 768px;
     }
 }
 
+
+@media( max-width: $mobile){
+
+    .h2{
+        &__viajero{
+                font-size: 20px;
+        }
+    }
+
+    .h2{
+        &__atencion{ 
+                font-size: 20px;
+            }
+         } 
+
+        .nav{
+            &__pages{
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: repeat(3, 52px);
+            grid-column-gap: 50px ;
+            grid-template-rows: repeat(2, 100px);
+            grid-row-gap: 20px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            }
+        }
+
+        .hove{
+            &__pages :hover{
+            transform: scale(1.1);
+        } 
+        }
+        
+
+    .div{
+        &__atencion{
+                display: grid;
+                grid-template-columns: repeat(2, 150px);
+                grid-template-rows: repeat(3,135px);
+                align-items: center;
+                justify-items: center;
+                grid-gap: 15px 30px;
+                text-align: center; }
+        }
+
+        .p{
+            &__atencion{
+                    text-align:center;
+            margin-top: 4px;
+            font-size: 15px;
+            line-height: 1;
+            padding: 3%;
+                }
+            }
+            .img {
+                &__tamaño{
+            width: 60px;
+            height: 60px;
+            }
+            }
+            .section{
+                &__nosotros{
+                    justify-items: center;
+                    align-items: center;
+                    display: block;
+                }
+            }
+            .texto{
+                &__nosotros{
+                        line-height: 1.25;
+                    font-size: 17px;
+                    text-align: center;
+                    padding: 5%;
+                }
+                }
+
+.h2{
+    &__nosotros{
+            font-size: 20px;
+        }
+            }
+
+.h2{
+        &__contacto{
+                font-size: 20px;
+            }
+        }
+
+        .table{
+            &__border{
+                    font-size: 10px;
+                }
+        }
+    }
+
+@media( min-width: $tablet){
+    
+    .div{
+        &__atencion{
+    display: grid;
+    grid-template-columns: repeat(3, 212px);
+    grid-template-rows: repeat(2,204px);
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+        }
+    }
+
+.img{
+    &__nosotros{
+            width: 200px;
+            height: 250px;
+        }
+    }
+
+.texto{
+    &__nosotros{
+            text-align: justify;
+        line-height: 1.25;
+        font-size: 15px;
+    }
+}
+}

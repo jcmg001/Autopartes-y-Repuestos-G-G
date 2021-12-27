@@ -1,0 +1,12 @@
+//variables
+$mobile:425px;
+$tablet:768px;
+
+.imagenes{
+    &__Service{
+        display: flex;
+        
+        height: 200px;
+        width: 200px;
+    }
+}

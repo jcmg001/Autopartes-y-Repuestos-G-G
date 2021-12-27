@@ -1,0 +1,143 @@
+// variables
+$mobile: 425px;
+$tablet:768px;
+
+
+
+.boton{
+    &__buscar  {
+    padding: 5px 100px;
+    font-size: 21px;
+    color: rgb(244, 244, 245);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    background-color: #2371a8 ; 
+    text-align: center;
+    margin-top: 25px;
+}
+}
+
+.h3{
+    font-size: 40px;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.div{
+    &__cuadro{
+        &__consultabombas{
+            display:flex;
+            justify-content: space-between;
+            width: px;
+        }
+    }
+}
+
+.input{
+    &__cuadro{
+    font-size:  20px;
+    }
+}
+
+.section{
+    &__pagos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 5%;
+        justify-items: center;
+        align-items: center;
+    }
+
+.img{
+    &__pagos1{
+        height: 170px;
+        width: 270px;
+}
+}
+
+.img{
+    &__pagos2{
+        height: 200px;
+        width: 200px;}
+}
+}
+
+@media (max-width: $mobile) {
+
+.cuadro{
+    &__consulta{
+        text-align: center;
+    margin-top: 15px;}
+}
+
+.div{
+    &__cuadro{
+        &__consultabombas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+        }
+    }
+}
+.cuadro{
+    &__consulta div {
+    display: flex;
+    flex-direction: column;}
+    }  
+
+    .section{
+        &__pagos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 5%;
+        justify-items: center;
+        align-items: center;
+        }
+    }
+    
+
+    .img{
+    &__pagos1{
+            height:70px ;
+            width: 100px;}
+    }
+    .img{
+        &__pagos2{
+        height: 100px;
+        width: 100px;}
+    }
+}
+
+@media (min-width: $tablet) {
+
+    .div{
+        &__cuadro{
+            &__consultabombas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+            }
+        }
+    }
+    .cuadro{
+        &__consulta div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+    }   
+
+    .consulta{
+        &__contacto{
+        font-size: small;
+        }
+    }
+
+}

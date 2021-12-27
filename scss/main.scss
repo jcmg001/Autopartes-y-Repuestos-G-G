@@ -1,9 +1,19 @@
-@import "index";
+
+    @import "index";
+    @import "bombas";
+    @import "carroceria";
+    @import "correa_tensores";
+    @import "electricidad_electronica";
+    @import "embragues";
+    @import "frenos";
+    @import "motor";
+    @import "servicios";
+    @import "transmision";
 
 
 // variables
 $mobile: 425px;
-
+$variable: 768px;
 
 .img{
     &__icono{
@@ -30,31 +40,97 @@ $mobile: 425px;
     &__index{
         font-size: 70px;
     text-align: center;
-    margin-top: 50px;
-    @media ( max-width: $mobile){
-        font-size: 25px;
-    } 
-    }
-    }
+    margin-top: 50px;}
+}
 
+.section{
+    &__pages{
+    display: grid;
+    align-content: center;
+}
+}
+
+.pages{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    padding-bottom: 5px;
+    text-decoration: none;
+    text-align: center;
+    flex-wrap:wrap;
+    justify-content: center;
+}
 
 .nav{
     &__pages{
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-column-gap: 50px ;
-    grid-template-rows: repeat(2, 170px);
+grid-template-columns: repeat(4, 100px);
+grid-column-gap: 50px ;
+grid-template-rows: repeat(2, 170px);
+grid-row-gap: 20px;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+}
+
+.hove{
+    &__pages :hover{
+    transform: scale(1.1);
+} 
+}
+
+.div{
+    &__pages{
+    &__hijos {
+    display: grid;
+    text-decoration: none;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+transition: all 1s;}
+}
+}
+
+
+    @media ( max-width: $mobile){
+        .h1{
+            &__index{
+        font-size: 25px;
+            }
+    }
+
+    .section{
+        &__pagos{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-top: 5%;
+            justify-items: center;
+            align-items: center;
+        }
+    }
+
+.nav{
+    &__pages{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 31px);
+    grid-column-gap: 62px ;
+    grid-template-rows: repeat(2, 112px);
     grid-row-gap: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
-    @media( max-width: $mobile){
-        margin-top: 3rem;
-        display: grid;
-        grid-template-columns: repeat(3, 35px)
     }
-    }
+}
+
+.section{
+    &__pages{
+    display: grid;
+    align-content: center;
+}
 }
 
 .div{
@@ -85,10 +161,33 @@ $mobile: 425px;
 }
 
 .pages{
-    width: 70px;
-    height: 70px;
+    width: 30px;
+    height: 30px;
     align-items: center;
     padding-bottom: 5px;
     text-decoration: none;
     text-align: center;
 }
+
+.footer{
+    background: linear-gradient(to top, #2371a8 , white );
+    margin-top: 50px;
+}
+
+.ol{
+    &__footer{
+        text-align: center;
+        list-style-type: none;
+        font-size: 10px;
+    }
+}
+
+.img{
+    &__footer{
+        margin-top: 20px;
+    width: 20px;
+    height: 20px;
+    }
+}
+    }
+

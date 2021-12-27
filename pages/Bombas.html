@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "description" content="Venta de repuestos para autos y motos, Embragues, Motor,
+    Bombas , Correas. Asesoramiento gratuito. Envio a todo el Pais ">
+    <meta name= "keywords" content="Repuestos, Auto, Moto, Motor, Embragues, Bombas de nafta, Pilas de bombas
+    Auto servicios, Chapa y pintura, Service, Alineacion, Balanceo">
     <link rel="shortcut icon" href="../imagenes/icono.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Bombas</title>
 </head>
-<body id="inicio" class="body__fondo">
+<body id="inicio" class="body__fondo ">
     <!--menu del header-->
     <header class="header">
             <img class="img__icono" src="../imagenes/icono.jpg" alt="icono">  
@@ -50,7 +54,7 @@
             </div>
         </nav>
     </header>
-    <H1 class="h1__pages animate__animated animate__rubberBand ">Autopartes y Repuestos G&G</H1>
+    <H1 class="h1__index animate__animated animate__rubberBand ">Autopartes y Repuestos G&G</H1>
             <!-- Menu des ervicios-->
     <section id="repuestos" class="section__pages">
             <nav class="nav__pages hove__pages">
@@ -91,7 +95,7 @@
             </h2>
         </div>
         <form class="cuadro__consulta" action=""> 
-            <div>
+            <div class="div__cuadro__consultabombas">
                 <label class="consulta__contacto" for="producto"> Producto</label>
                     <input class="consulta__contacto" type="text" name="selecciona un producto" id="consulta" placeholder="Escribe el producto" required>
                 <label class="consulta__contcto" for="descripcion"> Descripcion</label>
@@ -99,15 +103,17 @@
                 <label class="consulta__contacto" for="Medida"> Medida </label>
                     <input type="text" name="Medida" id="Medida" placeholder=" Escribe la medida" required>
                 <label class="consulta__Contacto" for="Marca"> Marca</label>
-                    <input type="text" name="Marca" id="marca" placeholder="Escribe la marca" required>
-            <div>
-            <div>
-                <input class="boton__buscar" type="button" value="Ver">
-            </div>  
+                    <input class="input__cuadro" type="text" name="Marca" id="marca" placeholder="Escribe la marca" required>
+            </div>
         </form>
+            <div class="boton">
+                <input class="boton__buscar" type="button" value="Ver">
+            </div>
+    </section>
             <div class="h3">
                 <h3 class="h3"> Bombas y Repuestos </h3>
             </div>
+    <section>
             <table class="table">
                 <thead>
                 </thead>
@@ -163,16 +169,16 @@
                     <strong> ESTO NOS PERMITE DESPACHAR CUALQUIER PEDIDO ESTRICTAMENTE EN EL DÍA, CON 100% DE EFECTIVIDAD </strong> 
                 </div>
 
-                <p class="p__nosotros__pages">
+                <p class="p__nosotros__pages ">
                 Nos avalan más de 10 años de permanencia en el mercado, habiendo podido combinar nuestra tradición y cultura empresarial, con tecnología e innovación.
                 Quedamos desde ya a su disposición. Será una satisfacción para nosotros responder a su contacto
                 </p>
             </div>
         </div>
     </section>
-    <section class=" section__pago">
-        <img src="../imagenes/metodo_de_pago.png" class="rounded float-start img__pagos1" alt="pago" >
-        <img src="../imagenes/envio_pais.png" class="rounded float-end img__pagos2" alt="envio pais" >
+    <section class="section__pagos">
+        <img src="../imagenes/metodo_de_pago.png" class="rounded float-start img__pagos1" alt="metodo de pago">
+        <img src="../imagenes/envio_pais.png" class="rounded float-end img__pagos2" alt="metodo de pago">
     </section>
     <footer class="footer">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">

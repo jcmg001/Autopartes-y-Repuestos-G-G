@@ -1,0 +1,24 @@
+//variable
+$mobile: 425px;
+$tablet: 768px;
+
+
+@media (max-width: $mobile) {
+
+.section{
+    &__pagos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 5%;
+    justify-items: center;
+    align-items: center;
+    }
+}
+
+.center{
+    &__iframe{
+        width: 100%;
+    }
+}
+}
+
